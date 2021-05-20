@@ -39,5 +39,5 @@ This is our complete food delivery app, where I will share with you how you can 
 Thanks for your love and support 🙏 
 
 ## Photos
-![Preview](https://ibb.co/NNFZVdh)
-![Preview](https://ibb.co/NNFZVdh)
+![Preview](https://i.ibb.co/94ps8kX/1.png)
+![Preview](https://i.ibb.co/94ps8kX/1.png)
