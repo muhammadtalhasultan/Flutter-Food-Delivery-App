@@ -1,0 +1,159 @@
+name: monkey_app_demo
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  clip_shadow: ^0.2.1
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/virtual/bag_filled.png
+    - assets/images/virtual/bag.png
+    - assets/images/virtual/cart_filled.png
+    - assets/images/virtual/cart.png
+    - assets/images/virtual/current_loc.png
+    - assets/images/virtual/dropdown.png
+    - assets/images/virtual/dropdown_filled.png
+    - assets/images/virtual/edit_filled.png
+    - assets/images/virtual/fav_filled.png
+    - assets/images/virtual/fav.png
+    - assets/images/virtual/home_filled.png
+    - assets/images/virtual/home.png
+    - assets/images/virtual/income.png
+    - assets/images/virtual/info.png
+    - assets/images/virtual/loc.png
+    - assets/images/virtual/login_bg.png
+    - assets/images/virtual/mail.png
+    - assets/images/virtual/MealMonkeyLogo.png
+    - assets/images/virtual/menu_filled.png
+    - assets/images/virtual/menu.png
+    - assets/images/virtual/more_filled.png
+    - assets/images/virtual/more.png
+    - assets/images/virtual/next_filled.png
+    - assets/images/virtual/next.png
+    - assets/images/virtual/noti.png
+    - assets/images/virtual/search_filled.png
+    - assets/images/virtual/shopping_bag.png
+    - assets/images/virtual/splashIcon.png
+    - assets/images/virtual/star_filled.png
+    - assets/images/virtual/star.png
+    - assets/images/virtual/user_filled.png
+    - assets/images/virtual/user.png
+    - assets/images/virtual/vector1.png
+    - assets/images/virtual/vector2.png
+    - assets/images/virtual/vector3.png
+    - assets/images/virtual/fb.png
+    - assets/images/virtual/google.png
+    - assets/images/real/apple_pie.jpg
+    - assets/images/real/bakery.jpg
+    - assets/images/real/breakfast.jpg
+    - assets/images/real/coffee.jpg
+    - assets/images/real/coffee2.jpg
+    - assets/images/real/coffee3.jpg
+    - assets/images/real/dessert.jpg
+    - assets/images/real/dessert2.jpg
+    - assets/images/real/dessert3.jpg
+    - assets/images/real/dessert4.jpg
+    - assets/images/real/dessert5.jpg
+    - assets/images/real/fruit.jpg
+    - assets/images/real/hamburger.jpg
+    - assets/images/real/hamburger2.jpg
+    - assets/images/real/hamburger3.jpg
+    - assets/images/real/map.png
+    - assets/images/real/paypal.png
+    - assets/images/real/pizza.jpg
+    - assets/images/real/pizza2.jpg
+    - assets/images/real/pizza3.jpg
+    - assets/images/real/pizza4.jpg
+    - assets/images/real/rice.jpg
+    - assets/images/real/rice2.jpg
+    - assets/images/real/user.jpg
+    - assets/images/real/visa.png
+    - assets/images/real/visa2.png
+    - assets/images/real/western.png
+    - assets/images/real/western2.jpg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Metropolis
+      fonts:
+        - asset: assets/fonts/Metropolis-Regular.ttf
+        - asset: assets/fonts/Metropolis-RegularItalic.ttf
+          style: italic
+        - asset: assets/fonts/Metropolis-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Metropolis-BoldItalic.ttf
+          style: italic
+          weight: 700
+        - asset: assets/fonts/Metropolis-ExtraBold.ttf
+          weight: 900
+        - asset: assets/fonts/Metropolis-ExtraBoldItalic.ttf
+          style: italic
+          weight: 900
+        - asset: assets/fonts/Metropolis-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Metropolis-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/Metropolis-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Metropolis-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
