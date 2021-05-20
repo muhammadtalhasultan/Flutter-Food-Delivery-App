@@ -40,4 +40,4 @@ Thanks for your love and support 🙏
 
 ## Photos
 ![Preview](https://i.ibb.co/94ps8kX/1.png)
-![Preview](https://i.ibb.co/94ps8kX/1.png)
+![Preview](https://i.ibb.co/dp8H29h/2.png)
