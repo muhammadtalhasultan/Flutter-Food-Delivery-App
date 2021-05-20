@@ -14,19 +14,30 @@ This is our complete food delivery app, where I will share with you how you can 
 ## Screens it contains:
 
 => Onboarding
+
 => Login
+
 => Forgot Password
+
 => Sign Up
+
 => Complete Profile
+
 => OTP Verification
+
 => Home Page
+
 => Product Details
+
 => Order
+
 => Profile
+
 => Bottom Navigation Bar
+
 
 Thanks for your love and support 🙏 
 
 ## Photos
-![Preview](1.png)
-![Preview](2.png)
+![Preview](Episode 1.png)
+![Preview](Episode 2.png)
