@@ -5,6 +5,9 @@ import './screens/landingScreen.dart';
 import './screens/loginScreen.dart';
 import './screens/signUpScreen.dart';
 import './screens/forgetPwScreen.dart';
+import './screens/sentOTPScreen.dart';
+import './screens/newPwScreen.dart';
+import './screens/introScreen.dart';
 import './const/colors.dart';
 
 void main() {
@@ -47,6 +50,9 @@ class MyApp extends StatelessWidget {
         LoginScreen.routeName: (context) => LoginScreen(),
         SignUpScreen.routeName: (context) => SignUpScreen(),
         ForgetPwScreen.routeName: (context) => ForgetPwScreen(),
+        SendOTPScreen.routeName: (context) => SendOTPScreen(),
+        NewPwScreen.routeName: (context) => NewPwScreen(),
+        IntroScreen.routeName: (context) => IntroScreen(),
       },
     );
   }

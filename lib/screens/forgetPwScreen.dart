@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:monkey_app_demo/utils/helper.dart';
-import 'package:monkey_app_demo/widgets/customTextInput.dart';
+
+import '../utils/helper.dart';
+import '../widgets/customTextInput.dart';
+import './sentOTPScreen.dart';
 
 class ForgetPwScreen extends StatelessWidget {
   static const routeName = "/restpwScreen";
@@ -34,7 +36,10 @@ class ForgetPwScreen extends StatelessWidget {
                   width: double.infinity,
                   height: 50,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context)
+                          .pushReplacementNamed(SendOTPScreen.routeName);
+                    },
                     child: Text("Send"),
                   ),
                 )
