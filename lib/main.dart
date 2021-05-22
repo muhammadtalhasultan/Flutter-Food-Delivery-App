@@ -8,6 +8,7 @@ import './screens/forgetPwScreen.dart';
 import './screens/sentOTPScreen.dart';
 import './screens/newPwScreen.dart';
 import './screens/introScreen.dart';
+import './screens/homeScreen.dart';
 import './const/colors.dart';
 
 void main() {
@@ -34,7 +35,29 @@ class MyApp extends StatelessWidget {
             elevation: MaterialStateProperty.all(0),
           ),
         ),
+        textButtonTheme: TextButtonThemeData(
+          style: ButtonStyle(
+            foregroundColor: MaterialStateProperty.all(
+              AppColor.orange,
+            ),
+          ),
+        ),
         textTheme: TextTheme(
+          headline3: TextStyle(
+            color: AppColor.primary,
+            fontSize: 16,
+            fontWeight: FontWeight.bold,
+          ),
+          headline4: TextStyle(
+            color: AppColor.secondary,
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
+          ),
+          headline5: TextStyle(
+            color: AppColor.primary,
+            fontWeight: FontWeight.normal,
+            fontSize: 25,
+          ),
           headline6: TextStyle(
             color: AppColor.primary,
             fontSize: 25,
@@ -53,6 +76,7 @@ class MyApp extends StatelessWidget {
         SendOTPScreen.routeName: (context) => SendOTPScreen(),
         NewPwScreen.routeName: (context) => NewPwScreen(),
         IntroScreen.routeName: (context) => IntroScreen(),
+        HomeScreen.routeName: (context) => HomeScreen(),
       },
     );
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:monkey_app_demo/const/colors.dart';
+import 'package:monkey_app_demo/screens/homeScreen.dart';
 import 'package:monkey_app_demo/utils/helper.dart';
 
 class IntroScreen extends StatefulWidget {
@@ -108,7 +109,12 @@ class _IntroScreenState extends State<IntroScreen> {
                 SizedBox(
                   height: 50,
                   width: double.infinity,
-                  child: ElevatedButton(onPressed: () {}, child: Text("Next")),
+                  child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context)
+                            .pushReplacementNamed(HomeScreen.routeName);
+                      },
+                      child: Text("Next")),
                 ),
                 Spacer()
               ],
