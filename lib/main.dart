@@ -13,6 +13,7 @@ import './screens/menuScreen.dart';
 import './screens/moreScreen.dart';
 import './screens/offerScreen.dart';
 import './screens/profileScreen.dart';
+import './screens/dessertScreen.dart';
 import './const/colors.dart';
 
 void main() {
@@ -85,6 +86,7 @@ class MyApp extends StatelessWidget {
         OfferScreen.routeName: (context) => OfferScreen(),
         ProfileScreen.routeName: (context) => ProfileScreen(),
         MoreScreen.routeName: (context) => MoreScreen(),
+        DessertScreen.routeName: (context) => DessertScreen(),
       },
     );
   }
