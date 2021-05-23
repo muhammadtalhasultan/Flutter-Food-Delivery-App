@@ -46,10 +46,12 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - assets/images/virtual/add_to_cart.png
     - assets/images/virtual/bag_filled.png
     - assets/images/virtual/bag.png
     - assets/images/virtual/cart_filled.png
     - assets/images/virtual/cart.png
+    - assets/images/virtual/cart_white.png
     - assets/images/virtual/current_loc.png
     - assets/images/virtual/dropdown.png
     - assets/images/virtual/dropdown_filled.png

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:monkey_app_demo/widgets/searchBar.dart';
+
 import '../const/colors.dart';
 import '../utils/helper.dart';
 import '../widgets/customNavBar.dart';
+import '../screens/individualItem.dart';
+import '../widgets/searchBar.dart';
 
 class HomeScreen extends StatelessWidget {
   static const routeName = "/homeScreen";
@@ -244,12 +246,18 @@ class HomeScreen extends StatelessWidget {
                     ),
                     child: Column(
                       children: [
-                        RecentItemCard(
-                          image: Image.asset(
-                            Helper.getAssetName("pizza3.jpg", "real"),
-                            fit: BoxFit.cover,
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.of(context)
+                                .pushNamed(IndividualItem.routeName);
+                          },
+                          child: RecentItemCard(
+                            image: Image.asset(
+                              Helper.getAssetName("pizza3.jpg", "real"),
+                              fit: BoxFit.cover,
+                            ),
+                            name: "Mulberry Pizza by Josh",
                           ),
-                          name: "Mulberry Pizza by Josh",
                         ),
                         RecentItemCard(
                             image: Image.asset(

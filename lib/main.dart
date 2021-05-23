@@ -14,6 +14,7 @@ import './screens/moreScreen.dart';
 import './screens/offerScreen.dart';
 import './screens/profileScreen.dart';
 import './screens/dessertScreen.dart';
+import './screens/individualItem.dart';
 import './const/colors.dart';
 
 void main() {
@@ -87,6 +88,7 @@ class MyApp extends StatelessWidget {
         ProfileScreen.routeName: (context) => ProfileScreen(),
         MoreScreen.routeName: (context) => MoreScreen(),
         DessertScreen.routeName: (context) => DessertScreen(),
+        IndividualItem.routeName: (context) => IndividualItem(),
       },
     );
   }
