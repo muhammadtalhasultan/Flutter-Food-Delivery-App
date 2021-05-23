@@ -58,6 +58,7 @@ flutter:
     - assets/images/virtual/fav.png
     - assets/images/virtual/home_filled.png
     - assets/images/virtual/home.png
+    - assets/images/virtual/home_white.png
     - assets/images/virtual/income.png
     - assets/images/virtual/info.png
     - assets/images/virtual/loc.png
