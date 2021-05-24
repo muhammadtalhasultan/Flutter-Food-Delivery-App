@@ -53,6 +53,7 @@ flutter:
     - assets/images/virtual/cart.png
     - assets/images/virtual/cart_white.png
     - assets/images/virtual/current_loc.png
+    - assets/images/virtual/camera.png
     - assets/images/virtual/dropdown.png
     - assets/images/virtual/dropdown_filled.png
     - assets/images/virtual/edit_filled.png
