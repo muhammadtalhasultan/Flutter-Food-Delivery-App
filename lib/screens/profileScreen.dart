@@ -89,6 +89,9 @@ class ProfileScreen extends StatelessWidget {
                               color: AppColor.primary,
                             ),
                       ),
+                      SizedBox(
+                        height: 5,
+                      ),
                       Text("Sign Out"),
                       SizedBox(
                         height: 40,
