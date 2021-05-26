@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:monkey_app_demo/const/colors.dart';
 import 'package:monkey_app_demo/utils/helper.dart';
 import 'package:monkey_app_demo/widgets/customNavBar.dart';
+import 'package:monkey_app_demo/widgets/customTextInput.dart';
 
 class PaymentScreen extends StatelessWidget {
   static const routeName = "/paymentScreen";
@@ -158,15 +159,176 @@ class PaymentScreen extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 20.0),
                   height: 50,
                   child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        showModalBottomSheet(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            isScrollControlled: true,
+                            isDismissible: false,
+                            context: context,
+                            builder: (context) {
+                              return Container(
+                                height: Helper.getScreenHeight(context) * 0.7,
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      children: [
+                                        IconButton(
+                                          onPressed: () {
+                                            Navigator.of(context).pop();
+                                          },
+                                          icon: Icon(
+                                            Icons.clear,
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 20.0),
+                                      child: Row(
+                                        children: [
+                                          Text(
+                                            "Add Credit/Debit Card",
+                                            style: Helper.getTheme(context)
+                                                .headline3,
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 20.0),
+                                      child: Divider(
+                                        color: AppColor.placeholder
+                                            .withOpacity(0.5),
+                                        thickness: 1.5,
+                                        height: 40,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 20.0),
+                                      child: CustomTextInput(
+                                          hintText: "card Number"),
+                                    ),
+                                    SizedBox(
+                                      height: 20,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 20.0),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Text("Expiry"),
+                                          SizedBox(
+                                            height: 50,
+                                            width: 100,
+                                            child: CustomTextInput(
+                                              hintText: "MM",
+                                              padding: const EdgeInsets.only(
+                                                  left: 35),
+                                            ),
+                                          ),
+                                          SizedBox(
+                                            height: 50,
+                                            width: 100,
+                                            child: CustomTextInput(
+                                              hintText: "YY",
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 20,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 20.0),
+                                      child: CustomTextInput(
+                                          hintText: "Security Code"),
+                                    ),
+                                    SizedBox(
+                                      height: 20,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 20.0),
+                                      child: CustomTextInput(
+                                          hintText: "First Name"),
+                                    ),
+                                    SizedBox(
+                                      height: 20,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 20.0),
+                                      child: CustomTextInput(
+                                          hintText: "Last Name"),
+                                    ),
+                                    SizedBox(
+                                      height: 20,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 20.0),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Text("You can remove this card"),
+                                          Switch(
+                                            value: false,
+                                            onChanged: (_) {},
+                                            thumbColor:
+                                                MaterialStateProperty.all(
+                                              AppColor.secondary,
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 30,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 20.0),
+                                      child: SizedBox(
+                                        height: 50,
+                                        child: ElevatedButton(
+                                            onPressed: () {
+                                              Navigator.of(context).pop();
+                                            },
+                                            child: Row(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              children: [
+                                                Icon(
+                                                  Icons.add,
+                                                ),
+                                                SizedBox(width: 40),
+                                                Text("Add Card"),
+                                                SizedBox(width: 40),
+                                              ],
+                                            )),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              );
+                            });
+                      },
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(Icons.add),
-                          SizedBox(
-                            width: 30,
-                          ),
-                          Text("Add Another Credit/Debit Card")
+                          Text("Add Another Credit/Debit Card"),
                         ],
                       )),
                 )

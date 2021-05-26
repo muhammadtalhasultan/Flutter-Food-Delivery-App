@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:monkey_app_demo/const/colors.dart';
+import 'package:monkey_app_demo/screens/aboutScreen.dart';
+import 'package:monkey_app_demo/screens/notificationScreen.dart';
 import 'package:monkey_app_demo/screens/paymentScreen.dart';
 import 'package:monkey_app_demo/utils/helper.dart';
 import 'package:monkey_app_demo/widgets/customNavBar.dart';
@@ -60,6 +62,10 @@ class MoreScreen extends StatelessWidget {
                     ),
                     name: "Notifications",
                     isNoti: true,
+                    handler: () {
+                      Navigator.of(context)
+                          .pushNamed(NotificationScreen.routeName);
+                    },
                   ),
                   SizedBox(
                     height: 10,
@@ -78,6 +84,9 @@ class MoreScreen extends StatelessWidget {
                       Helper.getAssetName("info.png", "virtual"),
                     ),
                     name: "About Us",
+                    handler: () {
+                      Navigator.of(context).pushNamed(AboutScreen.routeName);
+                    },
                   ),
                   SizedBox(
                     height: 10,
