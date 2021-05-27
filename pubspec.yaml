@@ -46,75 +46,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/virtual/add_to_cart.png
-    - assets/images/virtual/bag_filled.png
-    - assets/images/virtual/bag.png
-    - assets/images/virtual/cart_filled.png
-    - assets/images/virtual/cart.png
-    - assets/images/virtual/cart_white.png
-    - assets/images/virtual/current_loc.png
-    - assets/images/virtual/camera.png
-    - assets/images/virtual/dropdown.png
-    - assets/images/virtual/dropdown_filled.png
-    - assets/images/virtual/edit_filled.png
-    - assets/images/virtual/fav_filled.png
-    - assets/images/virtual/fav.png
-    - assets/images/virtual/home_filled.png
-    - assets/images/virtual/home.png
-    - assets/images/virtual/home_white.png
-    - assets/images/virtual/income.png
-    - assets/images/virtual/info.png
-    - assets/images/virtual/loc.png
-    - assets/images/virtual/login_bg.png
-    - assets/images/virtual/mail.png
-    - assets/images/virtual/MealMonkeyLogo.png
-    - assets/images/virtual/menu_filled.png
-    - assets/images/virtual/menu.png
-    - assets/images/virtual/more_filled.png
-    - assets/images/virtual/more.png
-    - assets/images/virtual/next_filled.png
-    - assets/images/virtual/next.png
-    - assets/images/virtual/noti.png
-    - assets/images/virtual/search_filled.png
-    - assets/images/virtual/shopping_bag.png
-    - assets/images/virtual/splashIcon.png
-    - assets/images/virtual/star_filled.png
-    - assets/images/virtual/star.png
-    - assets/images/virtual/user_filled.png
-    - assets/images/virtual/user.png
-    - assets/images/virtual/vector1.png
-    - assets/images/virtual/vector2.png
-    - assets/images/virtual/vector3.png
-    - assets/images/virtual/fb.png
-    - assets/images/virtual/google.png
-    - assets/images/real/apple_pie.jpg
-    - assets/images/real/bakery.jpg
-    - assets/images/real/breakfast.jpg
-    - assets/images/real/coffee.jpg
-    - assets/images/real/coffee2.jpg
-    - assets/images/real/coffee3.jpg
-    - assets/images/real/dessert.jpg
-    - assets/images/real/dessert2.jpg
-    - assets/images/real/dessert3.jpg
-    - assets/images/real/dessert4.jpg
-    - assets/images/real/dessert5.jpg
-    - assets/images/real/fruit.jpg
-    - assets/images/real/hamburger.jpg
-    - assets/images/real/hamburger2.jpg
-    - assets/images/real/hamburger3.jpg
-    - assets/images/real/map.png
-    - assets/images/real/paypal.png
-    - assets/images/real/pizza.jpg
-    - assets/images/real/pizza2.jpg
-    - assets/images/real/pizza3.jpg
-    - assets/images/real/pizza4.jpg
-    - assets/images/real/rice.jpg
-    - assets/images/real/rice2.jpg
-    - assets/images/real/user.jpg
-    - assets/images/real/visa.png
-    - assets/images/real/visa2.png
-    - assets/images/real/western.png
-    - assets/images/real/western2.jpg
+    - assets/images/real/
+    - assets/images/virtual/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:monkey_app_demo/screens/changeAddressScreen.dart';
 
 import './screens/spashScreen.dart';
 import './screens/landingScreen.dart';
@@ -101,6 +102,7 @@ class MyApp extends StatelessWidget {
         InboxScreen.routeName: (context) => InboxScreen(),
         MyOrderScreen.routeName: (context) => MyOrderScreen(),
         CheckoutScreen.routeName: (context) => CheckoutScreen(),
+        ChangeAddressScreen.routeName: (context) => ChangeAddressScreen(),
       },
     );
   }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:monkey_app_demo/const/colors.dart';
+import 'package:monkey_app_demo/screens/changeAddressScreen.dart';
+import 'package:monkey_app_demo/screens/homeScreen.dart';
 import 'package:monkey_app_demo/utils/helper.dart';
 import 'package:monkey_app_demo/widgets/customNavBar.dart';
 import 'package:monkey_app_demo/widgets/customTextInput.dart';
@@ -56,7 +58,10 @@ class CheckoutScreen extends StatelessWidget {
                         ),
                       ),
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context)
+                              .pushNamed(ChangeAddressScreen.routeName);
+                        },
                         child: Text(
                           "Change",
                           style: TextStyle(
@@ -448,7 +453,105 @@ class CheckoutScreen extends StatelessWidget {
                     height: 50,
                     width: double.infinity,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        showModalBottomSheet(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            isScrollControlled: true,
+                            isDismissible: false,
+                            context: context,
+                            builder: (context) {
+                              return Container(
+                                height: Helper.getScreenHeight(context) * 0.7,
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      children: [
+                                        IconButton(
+                                          onPressed: () {
+                                            Navigator.of(context).pop();
+                                          },
+                                          icon: Icon(Icons.clear),
+                                        ),
+                                      ],
+                                    ),
+                                    Image.asset(
+                                      Helper.getAssetName(
+                                        "vector4.png",
+                                        "virtual",
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 20,
+                                    ),
+                                    Text(
+                                      "Thank You!",
+                                      style: TextStyle(
+                                        color: AppColor.primary,
+                                        fontWeight: FontWeight.w900,
+                                        fontSize: 30,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    Text(
+                                      "for your order",
+                                      style: Helper.getTheme(context)
+                                          .headline4
+                                          .copyWith(color: AppColor.primary),
+                                    ),
+                                    SizedBox(
+                                      height: 20,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 20.0),
+                                      child: Text(
+                                          "Your order is now being processed. We will let you know once the order is picked from the outlet. Check the status of your order"),
+                                    ),
+                                    SizedBox(
+                                      height: 60,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 20,
+                                      ),
+                                      child: SizedBox(
+                                        height: 50,
+                                        width: double.infinity,
+                                        child: ElevatedButton(
+                                          onPressed: () {},
+                                          child: Text("Track My Order"),
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 20,
+                                      ),
+                                      child: TextButton(
+                                        onPressed: () {
+                                          Navigator.of(context)
+                                              .pushReplacementNamed(
+                                                  HomeScreen.routeName);
+                                        },
+                                        child: Text(
+                                          "Back To Home",
+                                          style: TextStyle(
+                                            color: AppColor.primary,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              );
+                            });
+                      },
                       child: Text("Send Order"),
                     ),
                   ),
