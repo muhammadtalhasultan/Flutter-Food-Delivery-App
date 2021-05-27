@@ -18,6 +18,8 @@ import './screens/individualItem.dart';
 import './screens/paymentScreen.dart';
 import './screens/notificationScreen.dart';
 import './screens/aboutScreen.dart';
+import './screens/inboxScreen.dart';
+import './screens/myOrderScreen.dart';
 import './const/colors.dart';
 
 void main() {
@@ -95,6 +97,8 @@ class MyApp extends StatelessWidget {
         PaymentScreen.routeName: (context) => PaymentScreen(),
         NotificationScreen.routeName: (context) => NotificationScreen(),
         AboutScreen.routeName: (context) => AboutScreen(),
+        InboxScreen.routeName: (context) => InboxScreen(),
+        MyOrderScreen.routeName: (context) => MyOrderScreen(),
       },
     );
   }

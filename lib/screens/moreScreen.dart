@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:monkey_app_demo/const/colors.dart';
 import 'package:monkey_app_demo/screens/aboutScreen.dart';
+import 'package:monkey_app_demo/screens/inboxScreen.dart';
+import 'package:monkey_app_demo/screens/myOrderScreen.dart';
 import 'package:monkey_app_demo/screens/notificationScreen.dart';
 import 'package:monkey_app_demo/screens/paymentScreen.dart';
 import 'package:monkey_app_demo/utils/helper.dart';
@@ -52,6 +54,9 @@ class MoreScreen extends StatelessWidget {
                       Helper.getAssetName("shopping_bag.png", "virtual"),
                     ),
                     name: "My Orders",
+                    handler: () {
+                      Navigator.of(context).pushNamed(MyOrderScreen.routeName);
+                    },
                   ),
                   SizedBox(
                     height: 10,
@@ -75,6 +80,9 @@ class MoreScreen extends StatelessWidget {
                       Helper.getAssetName("mail.png", "virtual"),
                     ),
                     name: "Inbox",
+                    handler: () {
+                      Navigator.of(context).pushNamed(InboxScreen.routeName);
+                    },
                   ),
                   SizedBox(
                     height: 10,
