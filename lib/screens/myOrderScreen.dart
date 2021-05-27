@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:monkey_app_demo/const/colors.dart';
+import 'package:monkey_app_demo/screens/checkoutScreen.dart';
 import 'package:monkey_app_demo/utils/helper.dart';
 import 'package:monkey_app_demo/widgets/customNavBar.dart';
 
@@ -267,10 +268,16 @@ class MyOrderScreen extends StatelessWidget {
                       ),
                       SizedBox(height: 20),
                       SizedBox(
-                          height: 50,
-                          width: double.infinity,
-                          child: ElevatedButton(
-                              onPressed: () {}, child: Text("Checkout")))
+                        height: 50,
+                        width: double.infinity,
+                        child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.of(context)
+                                .pushNamed(CheckoutScreen.routeName);
+                          },
+                          child: Text("Checkout"),
+                        ),
+                      ),
                     ],
                   ),
                 )

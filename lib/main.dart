@@ -20,6 +20,7 @@ import './screens/notificationScreen.dart';
 import './screens/aboutScreen.dart';
 import './screens/inboxScreen.dart';
 import './screens/myOrderScreen.dart';
+import './screens/checkoutScreen.dart';
 import './const/colors.dart';
 
 void main() {
@@ -99,6 +100,7 @@ class MyApp extends StatelessWidget {
         AboutScreen.routeName: (context) => AboutScreen(),
         InboxScreen.routeName: (context) => InboxScreen(),
         MyOrderScreen.routeName: (context) => MyOrderScreen(),
+        CheckoutScreen.routeName: (context) => CheckoutScreen(),
       },
     );
   }
