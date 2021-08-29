@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:monkey_app_demo/screens/forgetPwScreen.dart';
 
-import '../widgets/customTextInput.dart';
-import '../utils/helper.dart';
 import '../const/colors.dart';
-import '../screens/signUpScreen.dart';
 import '../screens/forgetPwScreen.dart';
+import '../screens/signUpScreen.dart';
+import '../utils/helper.dart';
+import '../widgets/customTextInput.dart';
 
 class LoginScreen extends StatelessWidget {
   static const routeName = "/loginScreen";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
